@@ -1,0 +1,18 @@
+<h1>All lists</h1>
+
+<div class="container">
+  <div class="row">
+    <% @lists.each do |list| %>
+      <div class="col-4">
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+          <%= link_to list_path(list) do%>
+            <%= list.name %>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+<%= link_to "Create a List", new_list_path %>

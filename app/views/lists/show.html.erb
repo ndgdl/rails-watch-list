@@ -1,0 +1,6 @@
+<h1><%= @list.name %></h1>
+
+<p><%= link_to 'Check the movies!', list_bookmarks_path(@list) %></p>
+
+<%= link_to "Add a movie", new_list_bookmark_path(@list) %>
+<%= link_to "Back to all Lists", lists_path %>
