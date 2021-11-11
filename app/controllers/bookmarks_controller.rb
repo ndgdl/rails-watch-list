@@ -23,7 +23,7 @@ class BookmarksController < ApplicationController
     @bookmark = Bookmark.find(params[:id])
     @bookmark.destroy
 
-    redirect_to list_bookmarks_path(@bookmark.list)
+    redirect_to list_path(@bookmark.list)
   end
 
   private
