@@ -9,8 +9,7 @@ puts "DB cleaned"
 
 puts "Seeding movies..."
 
-api_key = '10905904ad5de9b8c29f5aec179c5077'
-api_url = "https://api.themoviedb.org/3/movie/top_rated?api_key=#{api_key}"
+api_url = "https://api.themoviedb.org/3/movie/top_rated?api_key=#{ENV[TMDB_API_KEY]}"
 
 top_movies = JSON.parse(URI.open(api_url).read)["results"]
 
