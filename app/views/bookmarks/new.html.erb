@@ -1,7 +1,18 @@
-<h1>Add a movie to <%= @list.name %> </h1>
 
-<%= simple_form_for([@list, @bookmark]) do |f| %>
-  <%= f.input :comment %>
-  <%= f.association :movie, collection: Movie.all.order(:title), prompt: "Choose a Movie" %>
-  <%= f.button :submit %>
-<% end %>
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-6">
+      <div class="form shadow mt-3 p-3">
+        <%= simple_form_for([@list, @bookmark]) do |f| %>
+          <h1>Add a movie</h1>
+          <h2>to your <%= @list.name %> list</h2>
+          <%= f.input :comment,
+            label: "Add a comment:",
+            placeholder: "Extatic? Sad? Disappointing? " %>
+          <%= f.association :movie, collection: Movie.all.order(:title), prompt: "Choose a Movie" %>
+          <%= f.button :submit, class: "btn btn-primary w-100" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

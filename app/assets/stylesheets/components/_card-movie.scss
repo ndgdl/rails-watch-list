@@ -4,3 +4,31 @@
   height: 600px;
   position:relative;
 }
+
+.card-img-rating {
+  padding: 5px;
+  border-radius: 8px;
+  color: rgba(0, 0, 0, .7);
+  font-size: 18px;
+  position: absolute;
+  background-color: rgba(255, 255, 250, .8);
+  top: 10px;
+  left: 10px;
+  span {
+    font-size: 24px;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, .7);
+  }
+}
+
+.card-img-actions-buttons {
+  color: rgba(0, 0, 0, .2);
+  font-size: 32px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+  &:hover {
+    color: rgba(0, 0, 0, .7);
+  }
+}
