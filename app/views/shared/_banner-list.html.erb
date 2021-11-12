@@ -1,4 +1,4 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= list.img_url %>);">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= cl_image_path list.photo.key %>);">
   <div class="container">
     <h1><strong><%= list.name.upcase %></strong></h1>
     <p><%= list.bookmarks.count %> movie<%= "s" if list.bookmarks.count > 0 %> in the list</p>

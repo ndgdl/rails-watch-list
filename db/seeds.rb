@@ -60,3 +60,8 @@ end
 
 puts "Seeding completed:"
 puts "#{Movie.count} movies created"
+
+
+# hindi_movies.photo.attach(io: File.open('app/assets/images/bollywood.png'), filename: 'bollywood.png', content_type: 'img/png')
+# crime_movies.photo.attach(io: File.open('app/assets/images/crime.png'), filename: 'bollywood.png', content_type: 'img/png')
+# japanese_movies.photo.attach(io: File.open('app/assets/images/japan.png'), filename: 'bollywood.png', content_type: 'img/png')
